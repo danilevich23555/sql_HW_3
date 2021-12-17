@@ -59,3 +59,10 @@ create table join_table_4(
 
 alter table music_album_table 
 	add collection_album_id int references collection_table(id_collection);
+
+alter table music_album_table 
+	drop year_of_release;
+
+alter table track_table 
+	add duration int not null;
+	
